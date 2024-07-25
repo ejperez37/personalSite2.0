@@ -15,9 +15,11 @@ import {
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "New Remix App" }];
+  return [{ title: "ej's notes" }];
 };
 
 export const links: LinksFunction = () => {
@@ -39,11 +41,13 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="h-full">
+      <body className="h-full bg-slate-950 text-green-500">
+        <Header />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <Footer />
       </body>
     </html>
   );
