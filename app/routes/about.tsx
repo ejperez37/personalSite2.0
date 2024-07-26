@@ -1,9 +1,11 @@
 export default function About() {
   return (
     <>
-      <h2 className="text-2xl ms-20 pt-5 font-bold underline">about me</h2>
-      <div className="border-solid border-2 border-slate-900 rounded-full max-w-screen-2xl p-10 flex flex-row justify-center space-x-24">
-        <div className="leftColumn ms-10 space-y-3">
+      <h2 className="text-center sm:text-left text-2xl p-5 sm:ms-10 lg:ms-20 pt-5 font-bold underline">
+        about me
+      </h2>
+      <div className="border-solid lg:border-2 border-slate-900 rounded-full max-w-screen-2xl p-2 sm:p-10 flex flex-col sm:flex-row justify-center sm:space-x-24">
+        <div className="mx-auto sm:mx-0 sm:ms-10 space-y-3">
           <div>
             <img src="/face2.jpg" width={200} className="rounded-xl" />
           </div>
@@ -19,8 +21,8 @@ export default function About() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col text-left max-w-lg space-y-5">
-          <h3 className="text-xl font-bold">bio:</h3>
+        <div className="flex flex-col text-left max-w-lg space-y-5 ms-2 sm:ms-10">
+          <h3 className="text-xl font-bold pt-5 sm:pt-0">bio:</h3>
           <p>
             being introduced to systems thinking via combat sports && the
             physical preparation && the skill development therein, i have

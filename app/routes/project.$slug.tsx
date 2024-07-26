@@ -16,8 +16,10 @@ export default function ProjectPageShowcase() {
   } else
     return (
       <>
-        <h2 className="text-2xl ms-20 pt-5 font-bold pb-10">nothing found!</h2>
-        <div className="max-w-screen-md mx-auto space-y-10 text-lg pb-5">
+        <h2 className="text-2xl sm:ms-8 text-center underline lg:ms-20 lg:text-left pt-5 font-bold pb-10">
+          nothing found!
+        </h2>
+        <div className="max-w-screen-md mx-8 lg:mx-auto space-y-10 text-lg pb-5">
           <p>
             maybe what you're looking for is under construction, or maybe you're
             getting silly with the URL!

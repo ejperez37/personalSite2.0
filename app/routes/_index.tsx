@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import { useOptionalUser } from "~/utils";
+import { useOptionalUser } from "~/utils"; //Do I need this?
 import { supabase } from "~/models/user.server";
 import RecentPosts from "~/components/recentPosts";
 
@@ -11,11 +11,11 @@ export const loader = async () => {
 export default function Index() {
   return (
     <>
-      <main className="min-h-screen relative">
-        <h2 className="text-2xl ms-20 pt-5 font-bold">
+      <main className="min-h-screen">
+        <h2 className="text-2xl ms-4 md:ms-10 lg:ms-20 pt-5 font-bold">
           printf("Hello, %s\n", user);
         </h2>
-        <div className="max-w-screen-md ms-20 pt-5">
+        <div className="max-w-screen-sm lg:max-w-screen-md mx-4 md:ms-10 lg:ms-20 pt-5">
           <p>/*</p>
           <p>
             my name is e.j. and i want to welcome you to my personal tech site.
@@ -27,7 +27,7 @@ export default function Index() {
           </p>
           <p>*/</p>
         </div>
-        <div className="max-w-screen-md ms-20 pt-5 pb-10 space-y-3 text-lg">
+        <div className="max-w-screen-md mx-4 md:ms-10 lg:ms-20 pt-5 pb-10 space-y-3 text-lg">
           <p>
             // check out my current career goals{" "}
             <Link to="/project/underconstruction" className="underline">
@@ -43,7 +43,7 @@ export default function Index() {
         </div>
         <hr className="max-w-7xl mx-auto border-slate-900 border-solid border-y-2"></hr>
         <div>
-          <h2 className="text-2xl ms-20 pt-5 font-bold underline">
+          <h2 className="text-2xl mx-4 md:ms-10 lg:ms-20 pt-5 font-bold underline">
             recent blog posts
           </h2>
         </div>
