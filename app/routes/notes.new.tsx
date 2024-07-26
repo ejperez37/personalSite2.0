@@ -9,17 +9,22 @@ export const action: ActionFunction = async ({ request }) => {
 
   const formData = await request.formData();
   const title = formData.get("title");
+  const date = formData.get("date");
   const body = formData.get("body");
 
   if (typeof title !== "string" || title.length === 0) {
     return json({ errors: { title: "Title is required" } }, { status: 400 });
   }
 
+  if (typeof date !== "string" || date.length === 0) {
+    return json({ errors: { date: "Date required" } }, { status: 400 });
+  }
+
   if (typeof body !== "string" || body.length === 0) {
     return json({ errors: { body: "Body is required" } }, { status: 400 });
   }
 
-  const note = await createNote({ title, body, userId });
+  const note = await createNote({ title, date, body, userId });
   return redirect(`/notes/${note.id}`);
 };
 
@@ -40,6 +45,16 @@ export default function NewNotePage() {
           <input
             name="title"
             className="flex-1 rounded-md border-2 border-blue-500 px-3 text-lg leading-loose"
+          />
+        </label>
+      </div>
+      <div>
+        <label className="flex w-full flex-col gap-1">
+          <span>Date: </span>
+          <input
+            name="date"
+            type="date"
+            className="flex-1 px-3 border-2 border-blue-500 rounded-md"
           />
         </label>
       </div>
