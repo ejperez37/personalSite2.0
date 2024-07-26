@@ -73,7 +73,7 @@ export const action: ActionFunction = async ({ request }) => {
   });
 };
 
-export default function Admin() {
+export default function Login() {
   const [searchParams] = useSearchParams();
   const redirectTo = searchParams.get("redirectTo") ?? "/notes";
 

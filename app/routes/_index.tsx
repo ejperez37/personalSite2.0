@@ -6,7 +6,6 @@ import { Note } from "~/models/note.server";
 
 export const loader = async () => {
   const data = await supabase.from("notes").select();
-  console.log(data);
   return data;
 };
 

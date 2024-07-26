@@ -1,3 +1,31 @@
+import { supabase } from "~/models/user.server";
+import { useLoaderData } from "@remix-run/react";
+import { LoaderFunctionArgs } from "@remix-run/node";
+
+export async function loader({ params }: LoaderFunctionArgs) {
+  const id = params.id;
+  const { data } = await supabase.from("notes").select().eq("id", id).single();
+  console.log(data);
+  return { data };
+}
+
 export default function Blog() {
-  return <h2 className="text-2xl ms-20 pt-5 font-bold pb-10">TITLE HERE</h2>;
+  const { data }: any = useLoaderData();
+
+  return (
+    <>
+      <div className="ms-20 pt-5">
+        <h2 className="text-4xl font-bold">{data.title}</h2>
+        <hr className="max-w-prose border-slate-900 border-solid border-y-2"></hr>
+      </div>
+      <div className="ms-20 flex justify-start items-center gap-3 text-2xl">
+        <p>{data.date}</p>
+        <p>|</p>
+        <p>{data.description}</p>
+      </div>
+      <div className="ms-32 pt-5 text-2xl">
+        <p className="">{data.body}</p>
+      </div>
+    </>
+  );
 }

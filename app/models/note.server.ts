@@ -5,6 +5,7 @@ export type Note = {
   id: string;
   title: string;
   date: string;
+  description: string,
   body: string;
   profile_id: string;
 };
@@ -21,12 +22,13 @@ export async function getNoteListItems({ userId }: { userId: User["id"] }) {
 export async function createNote({
   title,
   date,
+  description,
   body,
   userId,
-}: Pick<Note, "body" | "title" | "date"> & { userId: User["id"] }) {
+}: Pick<Note, "body" | "title" | "date" | "description"> & { userId: User["id"] }) {
   const { data, error } = await supabase
     .from("notes")
-    .insert({ title, date, body, profile_id: userId })
+    .insert({ title, date, description, body, profile_id: userId })
     .select("*")
     .single();
 

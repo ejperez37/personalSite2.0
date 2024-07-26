@@ -11,6 +11,7 @@ export const loader = async ({}) => {
 export default function RecentPosts() {
   const { data }: any = useLoaderData();
   const recentPosts = data.map((post: Note) => listItem(post));
+  recentPosts.reverse(); // Make most recent posts go to top of list
 
   return <ul className="max-w-screen-sm ms-20 pt-5">{recentPosts}</ul>;
 }
