@@ -23,9 +23,9 @@ export default function Blog() {
         <p>|</p>
         <p>{data.description}</p>
       </div>
-      <div className="ms-32 pt-5 text-2xl">
+      <article className="ms-32 pt-5 max-w-3xl text-xl">
         <p className="">{data.body}</p>
-      </div>
+      </article>
     </>
   );
 }

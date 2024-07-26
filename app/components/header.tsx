@@ -9,7 +9,6 @@ export default function Header() {
       <div className="flex flex-row justify-between space-x-4">
         <Link to="/about">about</Link>
         <Link to="/projects">projects</Link>
-        <p>theme</p>
       </div>
     </nav>
   );

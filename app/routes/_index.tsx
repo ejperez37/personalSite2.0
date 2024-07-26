@@ -1,8 +1,7 @@
-import { Link, useLoaderData } from "@remix-run/react";
+import { Link } from "@remix-run/react";
 import { useOptionalUser } from "~/utils";
 import { supabase } from "~/models/user.server";
 import RecentPosts from "~/components/recentPosts";
-import { Note } from "~/models/note.server";
 
 export const loader = async () => {
   const data = await supabase.from("notes").select();
@@ -10,8 +9,6 @@ export const loader = async () => {
 };
 
 export default function Index() {
-  const user = useOptionalUser();
-
   return (
     <>
       <main className="min-h-screen relative">
@@ -33,17 +30,21 @@ export default function Index() {
         <div className="max-w-screen-md ms-20 pt-5 pb-10 space-y-3 text-lg">
           <p>
             // check out my current career goals{" "}
-            <a className="underline">here</a>
+            <Link to="/project/underconstruction" className="underline">
+              here
+            </Link>
           </p>
           <p>
             // or, check out my human sciences blog{" "}
-            <a className="underline">here</a>
+            <Link to="/project/underconstruction" className="underline">
+              here
+            </Link>
           </p>
         </div>
         <hr className="max-w-7xl mx-auto border-slate-900 border-solid border-y-2"></hr>
         <div>
           <h2 className="text-2xl ms-20 pt-5 font-bold underline">
-            recent posts
+            recent blog posts
           </h2>
         </div>
         <RecentPosts />
