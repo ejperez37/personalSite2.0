@@ -30,7 +30,10 @@ export default function Index() {
         <div className="max-w-screen-md mx-4 md:ms-10 lg:ms-20 pt-5 pb-10 space-y-3 text-lg">
           <p>
             // check out my current career goals{" "}
-            <Link to="/project/underconstruction" className="underline">
+            <Link
+              to="/blog/d15019bf-21ae-4c10-98f0-f0ff0de0d6cb"
+              className="underline"
+            >
               here
             </Link>
           </p>

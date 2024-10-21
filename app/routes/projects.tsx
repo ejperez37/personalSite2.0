@@ -17,9 +17,9 @@ export default function Projects() {
         <p className="hidden sm:block">
           it wasn't until later, specifically after learning about systems
           design for applications, that i realized i really enjoyed the IT side
-          of things more. now that is where my studies lie, as i journey towards
-          a career in cybersecurity, where i feel my all the skills and
-          attributes i've accumulated would be best put to use.
+          of things more. now that is where my studies lie -- a journey towards
+          a career in cybersecurity, where i feel all my skills, attributes, and
+          proclivities would be best put to use.
         </p>
         <p>expect more posts specific to IT and cybersecurity in my blog!</p>
         <p>*/</p>

@@ -1,6 +1,7 @@
 import { supabase } from "~/models/user.server";
 import { useLoaderData } from "@remix-run/react";
 import { LoaderFunctionArgs } from "@remix-run/node";
+import parse from "html-react-parser";
 
 export async function loader({ params }: LoaderFunctionArgs) {
   const id = params.id;
@@ -11,6 +12,7 @@ export async function loader({ params }: LoaderFunctionArgs) {
 
 export default function Blog() {
   const { data }: any = useLoaderData();
+  const dataBodyString = data.body;
 
   return (
     <>
@@ -23,8 +25,8 @@ export default function Blog() {
         <p className="hidden sm:visible">|</p>
         <p className="hidden sm:visible">{data.description}</p>
       </div>
-      <article className="mx-10 sm:ms-20 lg:ms-32 pt-5 max-w-xl lg:max-w-3xl text-xl">
-        <p className="">{data.body}</p>
+      <article className="mx-10 sm:ms-20 lg:ms-32 pt-5 max-w-xl lg:max-w-3xl text-2xl">
+        <div className="">{parse(dataBodyString)}</div>
       </article>
     </>
   );
