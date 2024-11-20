@@ -38,11 +38,11 @@ export default function Projects() {
         <div className="space-y-5">
           <Link to={"/project/underconstruction"}>
             <img
-              src="/risdHubScreenshot.png"
+              src="/developmentSystemsSS.png"
               width={400}
               className="rounded-2xl"
             />
-            <h3 className="line-through">college resource hub</h3>
+            <h3 className="line-through">human development systems</h3>
             <p>UNDER CONSTRUCTION</p>
           </Link>
         </div>

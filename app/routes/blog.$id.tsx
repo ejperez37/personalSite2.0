@@ -25,7 +25,7 @@ export default function Blog() {
         <p className="hidden sm:visible">|</p>
         <p className="hidden sm:visible">{data.description}</p>
       </div>
-      <article className="mx-10 sm:ms-20 lg:ms-32 pt-5 max-w-xl lg:max-w-3xl text-2xl">
+      <article className="sm:mx-10 mx-6 sm:ms-20 lg:ms-32 pt-5 max-w-xl lg:max-w-3xl text-2xl">
         <div className="">{parse(dataBodyString)}</div>
       </article>
     </>

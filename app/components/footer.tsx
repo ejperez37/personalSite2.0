@@ -5,8 +5,8 @@ export default function Footer() {
         <p>github</p>
       </a>
       <p>|</p>
-      <a href="https://linkedin.com">
-        <p>linkedin</p>
+      <a href="mailto:eliseojoseperez@proton.me">
+        <p>email</p>
       </a>
       <p>|</p>
       <p>copyright 2024</p>
