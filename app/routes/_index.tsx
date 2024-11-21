@@ -30,7 +30,11 @@ export default function Index() {
         <div className="max-w-screen-md mx-4 md:ms-10 lg:ms-20 pt-5 pb-10 space-y-3 text-lg">
           <p>
             // check out my resumé{" "}
-            <a href="/ePerezInfoTechResume.docx.pdf" className="underline">
+            <a
+              href="/ePerezInfoTechResume.docx.pdf"
+              className="underline"
+              target="_blank"
+            >
               here
             </a>
           </p>
