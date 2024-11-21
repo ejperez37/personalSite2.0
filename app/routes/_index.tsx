@@ -27,7 +27,7 @@ export default function Index() {
           </p>
           <p>*/</p>
         </div>
-        <div className="max-w-screen-md mx-4 md:ms-10 lg:ms-20 pt-5 pb-10 space-y-3 text-lg">
+        <div className="max-w-screen-md mx-4 md:ms-10 lg:ms-20 pt-5 pb-10 space-y-3 text-xl">
           <p>
             // check out my resumé{" "}
             <a
