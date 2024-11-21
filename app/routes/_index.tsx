@@ -31,7 +31,7 @@ export default function Index() {
           <p>
             // check out my resumé{" "}
             <a
-              href="/ePerezInfoTechResume.docx.pdf"
+              href="/ejPerezInfoTechResume.docx.pdf"
               className="underline"
               target="_blank"
             >
@@ -41,7 +41,7 @@ export default function Index() {
           <p>
             // check out my current career goals{" "}
             <Link
-              to="/blog/d15019bf-21ae-4c10-98f0-f0ff0de0d6cb"
+              to="/blog/34b39fde-972c-4dd4-a567-6cd867065b20"
               className="underline"
             >
               here
