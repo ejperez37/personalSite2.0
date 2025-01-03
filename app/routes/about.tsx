@@ -16,7 +16,7 @@ export default function About() {
             <ul>
               <li>- family IT professional</li>
               <li>- cat dad</li>
-              <li>- health fanatic</li>
+              <li>- health educator</li>
               <li>- systems thinker</li>
             </ul>
           </div>
@@ -43,6 +43,16 @@ export default function About() {
           <p>
             i value, among many other things: family, hard-thinking, and
             effective communication.
+          </p>
+          <p className="text-2xl">
+            // check out my resumé{" "}
+            <a
+              href="/ejPerezInfoTechResume.docx.pdf"
+              className="underline"
+              target="_blank"
+            >
+              here
+            </a>
           </p>
         </div>
       </div>

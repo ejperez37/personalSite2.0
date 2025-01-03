@@ -2,6 +2,7 @@ import { LoaderFunctionArgs, json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 import PersonalSiteV1 from "~/components/personalSiteV1";
 import YoutubeClone from "~/components/youtubeClone";
+import VMHomelab from "~/components/vmHomelab";
 
 export async function loader({ params }: LoaderFunctionArgs) {
   return json(params.slug);
@@ -13,7 +14,9 @@ export default function ProjectPageShowcase() {
     return <YoutubeClone />;
   } else if (slug == "personalSiteV1") {
     return <PersonalSiteV1 />;
-  } else
+  } else if (slug == "vmHomelab") {
+    return <VMHomelab />;
+  } else {
     return (
       <>
         <h2 className="text-2xl sm:ms-8 text-center underline lg:ms-20 lg:text-left pt-5 font-bold pb-10">
@@ -34,4 +37,5 @@ export default function ProjectPageShowcase() {
         </div>
       </>
     );
+  }
 }

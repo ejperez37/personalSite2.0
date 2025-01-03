@@ -21,7 +21,10 @@ export default function Projects() {
           a career in cybersecurity, where i feel all my skills, attributes, and
           proclivities would be best put to use.
         </p>
-        <p>expect more posts specific to IT and cybersecurity in my blog!</p>
+        <p>
+          i hope you find my mix of IT, programming, and cybersecurity projects
+          interesting!
+        </p>
         <p>*/</p>
       </div>
       <div className="flex flex-col justify-center items-center space-y-10 lg:flex-row lg:justify-around lg:items-center m-10 text-center">
@@ -36,14 +39,13 @@ export default function Projects() {
           </Link>
         </div>
         <div className="space-y-5">
-          <Link to={"/project/underconstruction"}>
+          <Link to={`/project/vmHomelab`}>
             <img
-              src="/developmentSystemsSS.png"
-              width={400}
+              src="/homelabAssets/pi_internals.jpg"
+              width={300}
               className="rounded-2xl"
             />
-            <h3 className="line-through">human development systems</h3>
-            <p>UNDER CONSTRUCTION</p>
+            <h3>my virtual machine homelab</h3>
           </Link>
         </div>
         <div className="space-y-5">

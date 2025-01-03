@@ -29,16 +29,6 @@ export default function Index() {
         </div>
         <div className="max-w-screen-md mx-4 md:ms-10 lg:ms-20 pt-5 pb-10 space-y-3 text-xl">
           <p>
-            // check out my resumé{" "}
-            <a
-              href="/ejPerezInfoTechResume.docx.pdf"
-              className="underline"
-              target="_blank"
-            >
-              here
-            </a>
-          </p>
-          <p>
             // check out my current career goals{" "}
             <Link
               to="/blog/34b39fde-972c-4dd4-a567-6cd867065b20"
