@@ -14,10 +14,10 @@ export default function About() {
             <p>e.j. perez</p>
             <p className="font-bold">occupation(s):</p>
             <ul>
-              <li>- family IT professional</li>
-              <li>- cat dad</li>
-              <li>- health educator</li>
+              <li>- family computer repairman</li>
               <li>- systems thinker</li>
+              <li>- health educator</li>
+              <li>- cat dad</li>
             </ul>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function About() {
           <p className="text-2xl">
             // check out my resumé{" "}
             <a
-              href="/ejPerezInfoTechResume.docx.pdf"
+              href="/currentITResume01-04-25.docx.pdf"
               className="underline"
               target="_blank"
             >
