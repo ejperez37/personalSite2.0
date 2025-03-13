@@ -1,13 +1,13 @@
 import { supabase } from "~/models/user.server";
 import { useLoaderData } from "@remix-run/react";
-import { LoaderFunctionArgs } from "@remix-run/node";
+import { json, LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
 import parse from "html-react-parser";
 
 export async function loader({ params }: LoaderFunctionArgs) {
   const id = params.id;
   const { data } = await supabase.from("notes").select().eq("id", id).single();
   console.log(data);
-  return { data };
+  return json({ data });
 }
 
 export default function Blog() {

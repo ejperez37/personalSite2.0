@@ -3,6 +3,8 @@ import { Link, useLoaderData } from "@remix-run/react";
 import PersonalSiteV1 from "~/components/personalSiteV1";
 import YoutubeClone from "~/components/youtubeClone";
 import VMHomelab from "~/components/vmHomelab";
+import PiHolePt1 from "~/components/piHolePt1";
+import PiHolePt2 from "~/components/piHolePt2";
 
 export async function loader({ params }: LoaderFunctionArgs) {
   return json(params.slug);
@@ -16,6 +18,10 @@ export default function ProjectPageShowcase() {
     return <PersonalSiteV1 />;
   } else if (slug == "vmHomelab") {
     return <VMHomelab />;
+  } else if (slug == "piHolePt1") {
+    return <PiHolePt1 />;
+  } else if (slug == "piHolePt2") {
+    return <PiHolePt2 />;
   } else {
     return (
       <>
