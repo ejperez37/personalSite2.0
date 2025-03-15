@@ -4,7 +4,7 @@ export default function VMHomelab() {
       <h2 className="text-3xl text-center underline lg:text-left lg:ms-20 pt-5 font-bold pb-10">
         Setting Up My Homelab: A Virtual Machine Server
       </h2>
-      <div className="max-w-64 sm:max-w-screen-sm lg:max-w-screen-md mx-auto space-y-10 text-2xl pb-5">
+      <div className="px-4 sm:max-w-screen-sm lg:max-w-screen-md mx-auto space-y-10 text-2xl pb-5">
         <p className="text-center underline text-xl pb-5 visible sm:hidden">
           for best viewing, access on desktop or tablet!
         </p>
