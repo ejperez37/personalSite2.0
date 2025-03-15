@@ -5,9 +5,6 @@ export default function VMHomelab() {
         Setting Up My Homelab: A Virtual Machine Server
       </h2>
       <div className="px-4 sm:max-w-screen-sm lg:max-w-screen-md mx-auto space-y-10 text-2xl pb-5">
-        <p className="text-center underline text-xl pb-5 visible sm:hidden">
-          for best viewing, access on desktop or tablet!
-        </p>
         <img
           src="/homelabAssets/desktop_internals.jpg"
           className="rounded-2xl mx-auto"

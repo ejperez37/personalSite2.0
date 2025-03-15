@@ -5,9 +5,6 @@ export default function PersonalSiteV1() {
         Personal Site V1: Eliseo's Room
       </h2>
       <div className="px-4 sm:max-w-screen-sm lg:max-w-screen-md mx-auto space-y-10 text-2xl pb-5">
-        <p className="text-center underline text-xl pb-5 visible sm:hidden">
-          for best viewing, access on desktop or tablet!
-        </p>
         <img src="/eliseosRoomScreenshot.png" />
         <p>
           This was my original personal site! I built this when I had my sights
