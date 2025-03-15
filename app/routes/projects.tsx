@@ -8,27 +8,14 @@ export default function Projects() {
       </h2>
       <div className="max-w-screen-md mx-8 lg:ms-20 pt-5 space-y-3">
         <p>/*</p>
-        <p className="hidden sm:block">
-          here are a list of my projects - starting off with some websites i've
-          built. i started my journey into the world of tech completely blind; a
-          trusted friend of mine had studied CS in college and based off of what
-          he saw in me, suggested i try learning web development.
-        </p>
-        <p className="hidden sm:block">
-          it wasn't until later, specifically after learning about systems
-          design for applications, that i realized i really enjoyed the IT side
-          of things more. now that is where my studies lie -- a journey towards
-          a career in cybersecurity, where i feel all my skills, attributes, and
-          proclivities would be best put to use.
-        </p>
         <p>
           i hope you find my mix of IT, programming, and cybersecurity projects
-          interesting!
+          interesting and educational!
         </p>
         <p>*/</p>
       </div>
       <div className="flex flex-col justify-center items-center space-y-10 lg:flex-row lg:justify-around lg:items-center m-10 text-center">
-        <h3 className="text-2xl underline">networking projects</h3>
+        <h3 className="text-2xl underline">IT projects</h3>
         <div className="space-y-5">
           <Link to={`/project/vmHomelab`}>
             <img
@@ -53,7 +40,7 @@ export default function Projects() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center space-y-10 lg:flex-row lg:justify-around lg:items-center m-10 text-center">
-        <h3 className="text-2xl underline">software development projects</h3>
+        <h3 className="text-2xl underline">programming projects</h3>
         <div className="space-y-5">
           <Link to={`/project/youtubeClone`}>
             <img

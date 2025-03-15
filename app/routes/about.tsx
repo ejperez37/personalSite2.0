@@ -4,7 +4,7 @@ export default function About() {
       <h2 className="text-center sm:text-left text-2xl p-5 sm:ms-10 lg:ms-20 pt-5 font-bold underline">
         about me
       </h2>
-      <div className="border-solid lg:border-2 border-slate-900 rounded-full max-w-screen-2xl p-2 sm:p-10 flex flex-col sm:flex-row justify-center sm:space-x-24">
+      <div className="border-solid xl:border-2 border-slate-900 rounded-full p-2 sm:p-10 flex flex-col sm:flex-row justify-center sm:space-x-24">
         <div className="mx-auto sm:mx-0 sm:ms-10 space-y-3">
           <div>
             <img src="/face2.jpg" width={200} className="rounded-xl" />
@@ -41,13 +41,13 @@ export default function About() {
             areas of my life.
           </p>
           <p>
-            i value, among many other things: family, hard-thinking, and
-            effective communication.
+            i value, among many other things: critical thinking, resiliency, and
+            adapation.
           </p>
           <p className="text-2xl">
             // check out my resumé{" "}
             <a
-              href="/currentITResume01-04-25.docx.pdf"
+              href="/ITCyberResumeWebsiteVer.docx.pdf"
               className="underline"
               target="_blank"
             >
