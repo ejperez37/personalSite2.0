@@ -3,7 +3,7 @@ import { Link, Outlet } from "@remix-run/react";
 export default function Projects() {
   return (
     <>
-      <h2 className="text-2xl ms-8 text-center sm:text-left lg:ms-20 pt-5 font-bold underline">
+      <h2 className="text-3xl ms-8 text-center sm:text-left lg:ms-20 pt-5 font-bold underline">
         projects
       </h2>
       <div className="max-w-screen-md mx-8 lg:ms-20 pt-5 space-y-3">
@@ -28,16 +28,7 @@ export default function Projects() {
         <p>*/</p>
       </div>
       <div className="flex flex-col justify-center items-center space-y-10 lg:flex-row lg:justify-around lg:items-center m-10 text-center">
-        <div className="space-y-5">
-          <Link to={`/project/youtubeClone`}>
-            <img
-              src="/ytCloneAssets/ytCloneScreenshot.png"
-              width={400}
-              className="rounded-2xl"
-            />
-            <h3>full stack youtube clone</h3>
-          </Link>
-        </div>
+        <h3 className="text-2xl underline">networking projects</h3>
         <div className="space-y-5">
           <Link to={`/project/vmHomelab`}>
             <img
@@ -46,6 +37,31 @@ export default function Projects() {
               className="rounded-2xl"
             />
             <h3>my virtual machine homelab</h3>
+          </Link>
+        </div>
+        <div className="space-y-5">
+          <Link to={`/project/piHolePt1`}>
+            <img src="/nanoPiBoard.jpg" width={300} className="rounded-2xl" />
+            <h3>pi-hole pt 1</h3>
+          </Link>
+        </div>
+        <div className="space-y-5">
+          <Link to={`/project/piHolePt2`}>
+            <img src="/nanoPiInHand.jpg" width={300} className="rounded-2xl" />
+            <h3>pi-hole pt 2</h3>
+          </Link>
+        </div>
+      </div>
+      <div className="flex flex-col justify-center items-center space-y-10 lg:flex-row lg:justify-around lg:items-center m-10 text-center">
+        <h3 className="text-2xl underline">software development projects</h3>
+        <div className="space-y-5">
+          <Link to={`/project/youtubeClone`}>
+            <img
+              src="/ytCloneAssets/ytCloneScreenshot.png"
+              width={450}
+              className="rounded-2xl"
+            />
+            <h3>full stack youtube clone</h3>
           </Link>
         </div>
         <div className="space-y-5">

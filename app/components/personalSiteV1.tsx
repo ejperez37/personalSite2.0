@@ -1,7 +1,7 @@
 export default function PersonalSiteV1() {
   return (
     <>
-      <h2 className="text-2xl text-center underline lg:text-left lg:ms-20 pt-5 font-bold pb-10">
+      <h2 className="text-3xl text-center underline lg:text-left lg:ms-20 pt-5 font-bold pb-10">
         Personal Site V1: Eliseo's Room
       </h2>
       <div className="max-w-64 sm:max-w-screen-sm lg:max-w-screen-md mx-auto space-y-10 text-2xl pb-5">
